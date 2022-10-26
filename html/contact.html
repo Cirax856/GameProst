@@ -1,0 +1,64 @@
+<!DOCTYPE html public 5>
+<html lang="en">
+<head>
+    <link rel="icon" href="../images/gameprost.ico" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="GameProst">
+    <link href="https://fonts.cdnfonts.com/css/panton-black-caps" rel="stylesheet">
+    <title>GameProst</title>
+</head>
+<body>
+    <div id="app">
+        <div class="navbar" id="navbar">
+            <img src="../images/gameprost.png" class="logo" height="100" width="100">
+            <h1 class="title">GameProst</h1>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href='./contact.html'>Contact</a></li>
+                <li><a href='./projects.html'>Projects</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="text">
+                <h1>Fill out this form to report a bug, send a suggestion or just leave us a nice message!</h1>
+            </div>
+            <div id="formBox">
+                <div id="form">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <label for="lname">Name/Nickname:</label>
+                        <br />
+                        <input type="text" id="lname" name="name" placeholder="Your name/nickname...">
+                        <br />
+
+                        <label for="lmail">E-Mail:</label>
+                        <br />
+                        <input type="text" id="lmail" name="mail" placeholder="Your E-Mail...">
+                        <br />
+
+                        <label for="lmessage" id="message">Message:</label>
+                        <br />
+                        <input type="text" id="lmessage" name="message" placeholder="Your message..." />
+                        <br />
+
+                        <label for="type">Type:</label>
+                        <br />
+
+                        <select id="type" name="type">
+                            <option value="bug">Bug Report</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="message">Message</option>
+                        </select>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>GameProst &copy; 2022</p>
+        </div>
+    </div>
+</body>
+</html>

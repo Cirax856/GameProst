@@ -1,0 +1,238 @@
+/*
+    colors used:
+    #2A2438 - main background
+    #352F44 - header background
+    #5C5470 - footer background
+    #DBD8E3 - text color
+*/
+
+* {
+    animation: start 0.5s forwards;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    color: #DBD8E3;
+}
+
+@keyframes start {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#app {
+    background-color: #2A2438;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100vw;
+    height: 7vh;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #352F44;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.title {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Panton,sans-serif;
+    font-family: "Panton Narrow",sans-serif;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 20px;
+    position: relative;
+    font-family: Panton,sans-serif;
+}
+
+    .navbar ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background: var(--theme);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: .3s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+.content {
+    width: 100vw;
+    height: 95vh;
+}
+
+#cyrun {
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+
+#CyrunTitle {
+    font-size: 70px;
+    font-family: Panton,sans-serif;
+    font-family: "Panton Narrow",sans-serif;
+}
+
+#CyrunText {
+    font-weight: 100;
+    line-height: 25px;
+    font-family: "Trebuchet MS";
+}
+
+#footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #5C5470;
+}
+
+    #footer p {
+        line-height: 10vh;
+        text-align: center;
+    }
+
+#text {
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#formBox {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#form {
+    background-color: #5C5470;
+    height: 40vh;
+    width: 40vw;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #352F44;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #2A2438;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form h1 {
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+@media(max-width: 1200px) {
+    #form {
+        width: 60vw;
+    }
+}
+
+@media(max-width:700px) {
+    .title {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        word-spacing: -50px;
+    }
+
+    #form {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:413px) {
+    .title {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 12.5px;
+        position: relative;
+        font-family: Panton,sans-serif;
+    }
+}
+
+@media(max-width:334px) {
+    .title {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 7px;
+        font-size: 12.5px;
+        position: relative;
+        font-family: Panton,sans-serif;
+    }
+}
